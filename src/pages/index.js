@@ -4,12 +4,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-
+import "../styles/Site.css"
 const IndexPage = () => (
 <Layout>
   <SEO title="Home" />
 
-  <h1>Scott Johnson</h1>
+  <h1 id="about"> <span>Scott Johnson</span> </h1>
   <nav>
     <ul class="nav-ul">
 
@@ -37,7 +37,7 @@ const IndexPage = () => (
       <div class="Projects">
         <div class='projectID'>
           <h2>FROGGER</h2>
-          //image
+          --image
           <p> This is a remake on the 1981 classic Frogger built in html, css, and Javascript using the Document Object Model. The goal of the game is to navigate across
             the obstacles and land in the safe spaces across the map. Some added features include a continue feature, multiple worlds, and scaling difficulty. If I were to make
             this game again I would use classes instead of reusing function multiple times for each obstacle</p>

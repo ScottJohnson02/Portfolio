@@ -1,0 +1,295 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+body {
+  background-image: url(../images/circle-blues.png);
+  font-size: 18px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+article {
+  padding: 1rem;
+  margin: auto;
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISDxUSEg8VFRUVFRUVFRUVFRUVFRcVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAJcBTQMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EABkQAQEBAQEBAAAAAAAAAAAAAAABAhFBEv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD14CQFip0BRACovUsABrMBcxQBWdRQHMb1HMFVJFBRAF6lgdBBagDWYZjQHVQAs65tlnQYAAaQBTqdALEXpYCAuYC5jQdBm5TrXU1AZBAUQBRG5AJninUoL0QBRAFSzpFBlGrGQBAFEAVqZMxegHUoC9EAUQAs6jRYDAICiAKI1mATLR0oB1AAAE1GOujOoDIN5gGYodAABKLEsAWJFBRAA1OgDmN2MAN5iZy0CodAOlAECxICtIAqABZ1itpYDALmAuY2h0FToAVFSwAEBRG8wE+PfUdGdZBkAAEBViRoEsRpmgAAAgKvx6uY0DmN6jAAICiLAWFigMhQAAARrMA+Oo6JYDAAAICg1AYCtZgLmKgC9EATUZb6moDJCRQUQBRACxFSgNZhmKCnUAVNTodBga1GeARpAFEAXqWACBVzAMxtAFEALGK2WAwHFAVDoNZhQBAoB0RQFiRQTUZbTUBkQ6CiAK1mJI0BUXqUA6ICgQFLABgas6wCnU6AojWYC5i0OgnQqAoigKigWMNlnQYEoDYigJRQZWHFA6IoAAJqMOjOoDLecpmNACAKCAWCpwBRAXoACanVAcxvUZzAXOWhAURQEsUBAsWAQAAEBbOudjogAgCrIkUFZqgIFQFEAVrMMxroJqMOjOoDIgCiAK0gCWC9SwAQBRGswFzF1OnVBzG9TrmCiAKI1AWJYHQQLEBRAFWQzGgcyLcnQBAF6IAqUUEazCZUFE6AogCajLaXIMxRAU6gCiAFF6TIGY2gCiAKmoAMDVnUAEAXoigdKi9BFzCZaBRABNQAZToAAAsakAGmQAAAAAUATUZ6gAAAqANSNKAzYAAAAAClgAwnQAAAakAGiwAQAH//2Q==);
+  border: 1rem ridge grey;
+  width: 65%;
+  color: darkblue;
+  margin-top: 2rem;
+}
+
+p {
+  color: darkblue;
+  text-align: center;
+}
+
+nav a:hover {
+  border-color: white;
+}
+
+nav {
+  border: 1rem ridge grey;
+  background-color: #474747;
+  position: fixed;
+  right: 1%;
+  top: 23%;
+  text-align: center;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+}
+
+nav .button {
+  padding: .2rem .2rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+header {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.button {
+  color: #222;
+  background-color: #474747;
+  display: inline-block;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+  border: 4px solid transparent;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-shadow: 0px 2px 3px #6666;
+  font-size: 25px;
+}
+
+.projectID {
+  color: darkblue;
+  margin: 5%;
+  border: 1rem ridge grey;
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISDxUSEg8VFRUVFRUVFRUVFRUVFRcVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAJcBTQMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EABkQAQEBAQEBAAAAAAAAAAAAAAABAhFBEv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD14CQFip0BRACovUsABrMBcxQBWdRQHMb1HMFVJFBRAF6lgdBBagDWYZjQHVQAs65tlnQYAAaQBTqdALEXpYCAuYC5jQdBm5TrXU1AZBAUQBRG5AJninUoL0QBRAFSzpFBlGrGQBAFEAVqZMxegHUoC9EAUQAs6jRYDAICiAKI1mATLR0oB1AAAE1GOujOoDIN5gGYodAABKLEsAWJFBRAA1OgDmN2MAN5iZy0CodAOlAECxICtIAqABZ1itpYDALmAuY2h0FToAVFSwAEBRG8wE+PfUdGdZBkAAEBViRoEsRpmgAAAgKvx6uY0DmN6jAAICiLAWFigMhQAAARrMA+Oo6JYDAAAICg1AYCtZgLmKgC9EATUZb6moDJCRQUQBRACxFSgNZhmKCnUAVNTodBga1GeARpAFEAXqWACBVzAMxtAFEALGK2WAwHFAVDoNZhQBAoB0RQFiRQTUZbTUBkQ6CiAK1mJI0BUXqUA6ICgQFLABgas6wCnU6AojWYC5i0OgnQqAoigKigWMNlnQYEoDYigJRQZWHFA6IoAAJqMOjOoDLecpmNACAKCAWCpwBRAXoACanVAcxvUZzAXOWhAURQEsUBAsWAQAAEBbOudjogAgCrIkUFZqgIFQFEAVrMMxroJqMOjOoDIgCiAK0gCWC9SwAQBRGswFzF1OnVBzG9TrmCiAKI1AWJYHQQLEBRAFWQzGgcyLcnQBAF6IAqUUEazCZUFE6AogCajLaXIMxRAU6gCiAFF6TIGY2gCiAKmoAMDVnUAEAXoigdKi9BFzCZaBRABNQAZToAAAsakAGmQAAAAAUATUZ6gAAAqANSNKAzYAAAAAClgAwnQAAAakAGiwAQAH//2Q==);
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+.projectID img {
+  width: 75%;
+}
+
+.projectID p {
+  margin-left: auto;
+}
+
+.projectID a img {
+  width: 100%;
+}
+
+div .button {
+  padding: 1rem;
+  border: 10px solid transparent;
+}
+
+a:hover {
+  border-color: darkblue;
+}
+
+.projects-title {
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISDxUSEg8VFRUVFRUVFRUVFRUVFRcVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAJcBTQMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EABkQAQEBAQEBAAAAAAAAAAAAAAABAhFBEv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD14CQFip0BRACovUsABrMBcxQBWdRQHMb1HMFVJFBRAF6lgdBBagDWYZjQHVQAs65tlnQYAAaQBTqdALEXpYCAuYC5jQdBm5TrXU1AZBAUQBRG5AJninUoL0QBRAFSzpFBlGrGQBAFEAVqZMxegHUoC9EAUQAs6jRYDAICiAKI1mATLR0oB1AAAE1GOujOoDIN5gGYodAABKLEsAWJFBRAA1OgDmN2MAN5iZy0CodAOlAECxICtIAqABZ1itpYDALmAuY2h0FToAVFSwAEBRG8wE+PfUdGdZBkAAEBViRoEsRpmgAAAgKvx6uY0DmN6jAAICiLAWFigMhQAAARrMA+Oo6JYDAAAICg1AYCtZgLmKgC9EATUZb6moDJCRQUQBRACxFSgNZhmKCnUAVNTodBga1GeARpAFEAXqWACBVzAMxtAFEALGK2WAwHFAVDoNZhQBAoB0RQFiRQTUZbTUBkQ6CiAK1mJI0BUXqUA6ICgQFLABgas6wCnU6AojWYC5i0OgnQqAoigKigWMNlnQYEoDYigJRQZWHFA6IoAAJqMOjOoDLecpmNACAKCAWCpwBRAXoACanVAcxvUZzAXOWhAURQEsUBAsWAQAAEBbOudjogAgCrIkUFZqgIFQFEAVrMMxroJqMOjOoDIgCiAK0gCWC9SwAQBRGswFzF1OnVBzG9TrmCiAKI1AWJYHQQLEBRAFWQzGgcyLcnQBAF6IAqUUEazCZUFE6AogCajLaXIMxRAU6gCiAFF6TIGY2gCiAKmoAMDVnUAEAXoigdKi9BFzCZaBRABNQAZToAAAsakAGmQAAAAAUATUZ6gAAAqANSNKAzYAAAAAClgAwnQAAAakAGiwAQAH//2Q==);
+  color: darkblue;
+  border: 1rem ridge grey;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.resume,
+.Social-Media {
+  background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISDxUSEg8VFRUVFRUVFRUVFRUVFRcVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAJcBTQMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EABkQAQEBAQEBAAAAAAAAAAAAAAABAhFBEv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD14CQFip0BRACovUsABrMBcxQBWdRQHMb1HMFVJFBRAF6lgdBBagDWYZjQHVQAs65tlnQYAAaQBTqdALEXpYCAuYC5jQdBm5TrXU1AZBAUQBRG5AJninUoL0QBRAFSzpFBlGrGQBAFEAVqZMxegHUoC9EAUQAs6jRYDAICiAKI1mATLR0oB1AAAE1GOujOoDIN5gGYodAABKLEsAWJFBRAA1OgDmN2MAN5iZy0CodAOlAECxICtIAqABZ1itpYDALmAuY2h0FToAVFSwAEBRG8wE+PfUdGdZBkAAEBViRoEsRpmgAAAgKvx6uY0DmN6jAAICiLAWFigMhQAAARrMA+Oo6JYDAAAICg1AYCtZgLmKgC9EATUZb6moDJCRQUQBRACxFSgNZhmKCnUAVNTodBga1GeARpAFEAXqWACBVzAMxtAFEALGK2WAwHFAVDoNZhQBAoB0RQFiRQTUZbTUBkQ6CiAK1mJI0BUXqUA6ICgQFLABgas6wCnU6AojWYC5i0OgnQqAoigKigWMNlnQYEoDYigJRQZWHFA6IoAAJqMOjOoDLecpmNACAKCAWCpwBRAXoACanVAcxvUZzAXOWhAURQEsUBAsWAQAAEBbOudjogAgCrIkUFZqgIFQFEAVrMMxroJqMOjOoDIgCiAK0gCWC9SwAQBRGswFzF1OnVBzG9TrmCiAKI1AWJYHQQLEBRAFWQzGgcyLcnQBAF6IAqUUEazCZUFE6AogCajLaXIMxRAU6gCiAFF6TIGY2gCiAKmoAMDVnUAEAXoigdKi9BFzCZaBRABNQAZToAAAsakAGmQAAAAAUATUZ6gAAAqANSNKAzYAAAAAClgAwnQAAAakAGiwAQAH//2Q==);
+  color: darkblue;
+  border: 1rem ridge grey;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 1rem;
+}
+
+.resume a {
+  margin: auto;
+}
+
+.resume .button {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.python {
+  width: 50%;
+}
+
+footer p,
+footer h3 {
+  color: white;
+}
+
+.downloads {
+  display: flex;
+  width: 100%
+}
+
+.downloads {
+  display: inline;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.downloads a {
+  width: 40%;
+  text-align: center;
+}
+
+#projects {
+  padding: 1rem;
+}
+
+.projectID h2 {
+  text-align: center;
+  color: darkblue;
+  text-shadow: 1px 1px 0 #f0632a;
+}
+
+.credit {
+  color: white;
+  font-size: 12px;
+}
+
+.credit a {
+  color: grey;
+}
+
+.Social-Media a {
+  color: grey;
+  width: 33%;
+}
+
+.Social-Media img {
+  height: 200px;
+}
+
+.Social {
+  display: flex;
+  justify-content: center;
+}
+
+.Discord {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Discord p {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+p a {
+  color: grey;
+}
+
+/* Media Querys */
+@media screen and (min-width: 950px) and (max-width: 1400px) {
+  nav .button {
+    padding: 0rem 0rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 949px) {
+  nav {
+    width: 20%
+  }
+}
+
+/* Animation for my Name */
+@media screen and (min-width: 0px) {
+  span {
+    color: white;
+    font: 50px "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+  }
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 799px) {
+  .nav-ul {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .Projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social {
+    flex-direction: column;
+  }
+
+  nav {
+    position: fixed;
+    top: 3px;
+    width: 400px;
+    padding: 0;
+  }
+
+  nav .button {
+    font-size: 20px;
+    padding: 0rem 0rem;
+    margin: 0;
+  }
+}
