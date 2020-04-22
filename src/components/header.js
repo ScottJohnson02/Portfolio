@@ -5,8 +5,6 @@ import React from "react"
 const Header = ({ siteTitle }) => (
 <header>
   <div class="container">
-    <div class="logo">
-    </div>
     <div class="navigation">
       <nav>
         <ul class="nav-ul">
