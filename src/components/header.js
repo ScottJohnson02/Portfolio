@@ -3,40 +3,27 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+<header>
+  <div class="container">
+    <div class="logo">
     </div>
-  </header>
+    <div class="navigation">
+      <nav>
+        <ul class="nav-ul">
+
+          <li> <a href="#about" class="button"> About me </a> </li>
+          <li> <a href="#projects" class="button"> Previous Projects </a> </li>
+          <li> <a href="#resume" class="button"> Resume </a> </li>
+          <li> <a href="#contact" class="button"> Contact Me </a> </li>
+
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

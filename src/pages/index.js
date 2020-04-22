@@ -1,26 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import "../styles/Site.css"
+import Header from "../components/header"
 const IndexPage = () => (
 <Layout>
   <SEO title="Home" />
 
   <h1 id="about"> <span>Scott Johnson</span> </h1>
-  <nav>
-    <ul class="nav-ul">
 
-      <li> <a href="#about" class="button"> About me </a> </li>
-      <li> <a href="#projects" class="button"> Previous Projects </a> </li>
-      <li> <a href="#resume" class="button"> Resume </a> </li>
-      <li> <a href="#contact" class="button"> Contact Me </a> </li>
-
-
-    </ul>
-  </nav>
   <article class="about">
     <h2>About Me</h2>
     <p>Hello, my name is Scott Johnson and I am 18 years old. I'm currently a freshman at Thaddeus Stevens enrolled in the CSET program
