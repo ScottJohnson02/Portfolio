@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 //static files
 import "../styles/Site.css"
 import resume from "../downloads/Scott-Johnson-Resume.pdf"
-import island from "../downloads/island.zip"
+
 
 
 //header component
@@ -108,7 +108,7 @@ const IndexPage = () => {
             <p> This is a choose your own adventure game built in python. This was a quick little game to code, but I was able
               to learn a lot about variables and conditionals. If I were to remake this project I would add more options and more interesting
               paths.</p>
-            <a class="button python" href={island} download="python-island-game.py" >Click here to download game</a>
+            <a class="button python" href='' download="python-island-game.py" >Click here to download game</a>
             <h3> Highlights </h3>
             <ul>
               <li>Practice with nested conditionals</li>
